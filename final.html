@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation bar - links to all pages -->
+  <nav id="navbar">
+    <span class="logo">MyPortfolio</span>
+    <ul>
+      <li><a href="final.html">Home</a></li>
+      <li><a href="finalabout.html">About Me</a></li>
+      <li><a href="finalskills.html">My Skills</a></li>
+      <li><a href="finalproject.html">My Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero section - first thing visitors see -->
+  <div class="hero">
+    <h1>Hi, I'm <span class="green">Arezo Ahmadi</span></h1>
+    <h2>Computer Science Student</h2>
+    <p>
+      Welcome to my portfolio. Here you can explore my projects,
+      learn about my skills, and find out a little about who I am.
+    </p>
+    <a href="finalproject.html" class="btn">View My Projects</a>
+    <a href="finalabout.html" class="btn-outline">About Me</a>
+  </div>
+
+  <!-- Loading bar -->
+  <div class="loading-wrap">
+    <p>Page Loading...</p>
+    <div class="loading-track">
+      <div class="loading-bar" id="loading-bar"></div>
+    </div>
+  </div>
+
+  <!-- Stats section - shows the box model in CSS -->
+  <div class="stats">
+    <h2>At a Glance</h2>
+    <div class="stats-row">
+      <div class="stat-box">
+        <strong>1+</strong>
+        <span>Years Coding</span>
+      </div>
+      <div class="stat-box">
+        <strong>5+</strong>
+        <span>Projects Built</span>
+      </div>
+      <div class="stat-box">
+        <strong>3</strong>
+        <span>Languages Known</span>
+      </div>
+      <div class="stat-box">
+        <strong>85%</strong>
+        <span>Passion for CS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image slideshow -->
+  <div class="slideshow-wrap">
+    <h2>Highlights</h2>
+    <div class="slideshow">
+      <div class="slide">
+        <img src="images/slide1.jpg" alt="Web project screenshot. Credit: Arezo Ahmadi." />
+        <p>Web Application Project</p>
+      </div>
+      <div class="slide">
+        <img src="images/slide2.jpg" alt="Python project output. Credit: Arezo Ahmadi." />
+        <p>Python Data Analysis</p>
+      </div>
+      <div class="slide">
+        <img src="images/slide3.jpg" alt="Mobile app design. Credit: Arezo Ahmadi." />
+        <p>Mobile App Design</p>
+      </div>
+      <button onclick="changeSlide(-1)">&#10094;</button>
+      <button onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Countdown timer -->
+  <div class="countdown">
+    <h2>Graduation Countdown</h2>
+    <p>Working hard every day toward the finish line.</p>
+    <div class="countdown-row">
+      <div class="cd-box"><span id="cd-days">--</span><br />Days</div>
+      <div class="cd-box"><span id="cd-hours">--</span><br />Hours</div>
+      <div class="cd-box"><span id="cd-minutes">--</span><br />Minutes</div>
+      <div class="cd-box"><span id="cd-seconds">--</span><br />Seconds</div>
+    </div>
+  </div>
+
+  <!-- Footer - same on all pages -->
+  <footer>
+    <p>&copy; 2026 <strong>Arezo Ahmadi</strong> &mdash; Built with <em>HTML, CSS & JavaScript</em></p>
+    <div class="footer-links">
+      <a href="final.html">Home</a>
+      <a href="finalabout.html">About</a>
+      <a href="finalskills.html">Skills</a>
+      <a href="finalproject.html">Projects</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

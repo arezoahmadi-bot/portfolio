@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | My Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav id="navbar">
+    <span class="logo">MyPortfolio</span>
+    <ul>
+      <li><a href="final.html">Home</a></li>
+      <li><a href="finalabout.html">About Me</a></li>
+      <li><a href="finalskills.html">My Skills</a></li>
+      <li><a href="finalproject.html">My Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page title -->
+  <div class="page-header">
+    <h1>My Projects</h1>
+    <p>A collection of what I have built in my CS journey.</p>
+  </div>
+
+  <div class="page-main">
+
+    <!-- Filter checkboxes -->
+    <h2 class="section-title">Filter by Category</h2>
+
+    <!-- User interaction 1: checkboxes -->
+    <div class="filter-row">
+      <label><input type="checkbox" class="filter-check" value="web" checked onchange="filterProjects()" /> Web</label>
+      <label><input type="checkbox" class="filter-check" value="python" checked onchange="filterProjects()" /> Python</label>
+      <label><input type="checkbox" class="filter-check" value="data" checked onchange="filterProjects()" /> Data / ML</label>
+      <label><input type="checkbox" class="filter-check" value="mobile" checked onchange="filterProjects()" /> Mobile</label>
+    </div>
+
+    <!-- Project cards -->
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card" data-category="web">
+        <img src="images/project1.jpg" alt="Budget tracker app screenshot. Credit: Arezo Ahmadi." />
+        <div class="project-info">
+          <span class="tag">Web</span>
+          <h3>Budget Tracker App</h3>
+          <p>A personal finance tool built with <strong>HTML, CSS, and JavaScript</strong> to track income and expenses.</p>
+          <a href="#" class="btn-outline">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="python">
+        <img src="images/project2.jpg" alt="Python weather data graph. Credit: YOUR NAME." />
+        <div class="project-info">
+          <span class="tag">Python</span>
+          <h3>Weather Data Analyzer</h3>
+          <p>A Python script that fetches weather data and plots 30-day trends using <em>Pandas</em> and Matplotlib.</p>
+          <a href="#" class="btn-outline">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data">
+        <img src="images/project3.jpg" alt="Spam classifier ML dashboard. Credit: Arezo Ahmadi." />
+        <div class="project-info">
+          <span class="tag">Data / ML</span>
+          <h3>Spam Email Classifier</h3>
+          <p>An ML model using <strong>scikit-learn</strong> that detects spam emails with 94% accuracy.</p>
+          <a href="#" class="btn-outline">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="mobile">
+        <img src="images/project4.jpg" alt="Study planner mobile app UI. Credit: Arezo Ahmadi." />
+        <div class="project-info">
+          <span class="tag">Mobile</span>
+          <h3>Study Planner App</h3>
+          <p>A mobile study scheduler built with React Native featuring task lists and a Pomodoro timer.</p>
+          <a href="#" class="btn-outline">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <img src="images/project5.jpg" alt="Coffee shop landing page. Credit: Arezo Ahmadi." />
+        <div class="project-info">
+          <span class="tag">Web</span>
+          <h3>Coffee Shop Landing Page</h3>
+          <p>A fully responsive landing page with CSS animations, a contact form, and mobile-first layout.</p>
+          <a href="#" class="btn-outline">View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Video embed -->
+    <h2 class="section-title">Project Demo Video</h2>
+    <div class="video-wrap">
+      <video controls width="100%" poster="images/video-poster.jpg"
+        aria-label="Demo video of Budget Tracker App. Credit: YOUR NAME.">
+        <source src="images/demo-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Search bar -->
+    <h2 class="section-title">Search Projects</h2>
+
+    <!-- User interaction 2: text input -->
+    <div class="search-wrap">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="e.g. Python, Web, ML..."
+        oninput="searchProjects()"
+      />
+      <p id="search-output"></p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 <strong>YOUR NAME</strong> &mdash; Built with <em>HTML, CSS & JavaScript</em></p>
+    <div class="footer-links">
+      <a href="final.html">Home</a>
+      <a href="finalabout.html">About</a>
+      <a href="finalskills.html">Skills</a>
+      <a href="finalproject.html">Projects</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

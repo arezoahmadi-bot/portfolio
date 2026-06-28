@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | About Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav id="navbar">
+    <span class="logo">MyPortfolio</span>
+    <ul>
+      <li><a href="final.html">Home</a></li>
+      <li><a href="finalabout.html">About Me</a></li>
+      <li><a href="finalskills.html">My Skills</a></li>
+      <li><a href="finalproject.html">My Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page title -->
+  <div class="page-header">
+    <h1>About Me</h1>
+    <p>A little bit about who I am and where I come from.</p>
+  </div>
+
+  <!-- About section -->
+  <div class="page-main">
+
+    <div class="about-card">
+      <img
+        src="images/about-photo.jpg"
+        alt="Photo of Arezo at a desk. Credit: personal photo."
+        class="about-img"
+      />
+      <div>
+        <h2>Arezo Ahmadi</h2>
+        <p><em>Computer Science Student & Aspiring Developer</em></p>
+
+        <!-- Paragraph with bold, italic, and break tags -->
+        <p>
+          Hello! My name is <strong>Arezo</strong> and I am a Computer Science student
+          who loves building software that solves real problems.
+          <br />
+          I started with basic Python scripts and have grown to work with web
+          technologies, data structures, and algorithms.
+        </p>
+
+        <p>
+          Outside of class, I enjoy hiking, reading, and learning English as 
+         second language. These hobbies keep me creative and sharp.
+        </p>
+
+        <!-- Facts list -->
+        <ul class="facts-list">
+          <li><strong>Location:</strong> Kabul, Afghanistan</li>
+          <li><strong>Degree:</strong> High school</li>
+          <li><strong>Year:</strong> 3rd year</li>
+          <li><strong>Interests:</strong> Coding, AI learning, Reading, hiking</li>
+        </ul>
+
+        <a href="finalproject.html" class="btn">See My Work</a>
+      </div>
+    </div>
+
+    <!-- Hobbies section -->
+    <h2 class="section-title">My Hobbies</h2>
+    <div class="hobbies-row">
+      <div class="hobby-box">
+        <p>&#127807;</p>
+        <h3>Hiking</h3>
+        <p>Nature trails give me clarity and fresh ideas away from the screen.</p>
+      </div>
+      <div class="hobby-box">
+        <p>&#128218;</p>
+        <h3>Reading</h3>
+        <p>From sci-fi to AI books — reading broadens my thinking every week.</p>
+      </div>
+      <div class="hobby-box">
+        <p>&#127926;</p>
+        <h3>Solving math problems</h3>
+        <p>Solving math problems help me to think logically.</p>
+      </div>
+      <div class="hobby-box">
+        <p>&#128187;</p>
+        <h3>Open Source</h3>
+        <p>Contributing to GitHub projects gives back to the community.</p>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <h2 class="section-title">Get in Touch</h2>
+    <p style="text-align:center;">Fill in the form below and I will get back to you.</p>
+
+    <div class="form-wrap">
+
+      <!-- User interaction 1: text input -->
+      <label for="contact-name">Arezo Ahmadi</label>
+      <input type="text" id="contact-name" placeholder="e.g. Jane Smith" />
+
+      <!-- User interaction 2: email input -->
+      <label for="contact-email">arezo.ahmadi.com@gmail.com</label>
+      <input type="email" id="contact-email" placeholder="e.g. jane@email.com" />
+
+      <!-- User interaction 3: dropdown -->
+      <label for="contact-subject">Subject</label>
+      <select id="contact-subject">
+        <option value="">-- Select a topic --</option>
+        <option value="internship">Internship Opportunity</option>
+        <option value="collaboration">Project Collaboration</option>
+        <option value="feedback">Portfolio Feedback</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Message box -->
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" rows="5" placeholder="Write your message..."></textarea>
+
+      <button class="btn" onclick="handleContactForm()">Send Message</button>
+
+      <!-- Output shown by JavaScript -->
+      <div id="form-output"></div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 <strong>YOUR NAME</strong> &mdash; Built with <em>HTML, CSS & JavaScript</em></p>
+    <div class="footer-links">
+      <a href="final.html">Home</a>
+      <a href="finalabout.html">About</a>
+      <a href="finalskills.html">Skills</a>
+      <a href="finalproject.html">Projects</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

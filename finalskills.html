@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | My Skills</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <nav id="navbar">
+    <span class="logo">MyPortfolio</span>
+    <ul>
+      <li><a href="final.html">Home</a></li>
+      <li><a href="finalabout.html">About Me</a></li>
+      <li><a href="finalskills.html">My Skills</a></li>
+      <li><a href="finalproject.html">My Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page title -->
+  <div class="page-header">
+    <h1>My Skills</h1>
+    <p>Technologies and tools I use as a CS student.</p>
+  </div>
+
+  <div class="page-main">
+
+    <!-- Skills banner image -->
+    <img
+      src="images/skills-banner.jpg"
+      alt="Developer workspace with laptop and code. Credit: Unsplash free license."
+      class="banner-img"
+    />
+
+    <!-- Skill progress bars -->
+    <h2 class="section-title">Technical Proficiency</h2>
+
+    <div class="skill-bar-wrap">
+      <div class="skill-label">
+        <span><strong>Python</strong></span>
+        <span>85%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill green-bar" style="width:85%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-wrap">
+      <div class="skill-label">
+        <span><strong>JavaScript</strong></span>
+        <span>75%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill gold-bar" style="width:75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-wrap">
+      <div class="skill-label">
+        <span><strong>HTML & CSS</strong></span>
+        <span>90%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill brown-bar" style="width:90%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-wrap">
+      <div class="skill-label">
+        <span><strong>Java</strong></span>
+        <span>65%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill green-bar" style="width:65%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-wrap">
+      <div class="skill-label">
+        <span><strong>SQL</strong></span>
+        <span>70%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill gold-bar" style="width:70%;"></div>
+      </div>
+    </div>
+
+    <!-- Skills radar chart -->
+    <h2 class="section-title">Skills Chart</h2>
+    <div class="chart-box">
+      <canvas id="skillsChart"></canvas>
+    </div>
+
+    <!-- Quiz - radio buttons -->
+    <h2 class="section-title">Quick CS Quiz</h2>
+    <div class="quiz-box">
+      <p><strong>Q: What does "OOP" stand for in programming?</strong></p>
+
+      <!-- User interaction 1: radio buttons -->
+      <label><input type="radio" name="quiz" value="a" /> Object-Oriented Programming</label><br />
+      <label><input type="radio" name="quiz" value="b" /> Open Object Protocol</label><br />
+      <label><input type="radio" name="quiz" value="c" /> Operational Output Process</label><br />
+      <label><input type="radio" name="quiz" value="d" /> Online Operating Platform</label><br />
+
+      <button class="btn" onclick="checkQuiz()" style="margin-top:1rem;">Submit Answer</button>
+      <p id="quiz-result"></p>
+    </div>
+
+    <!-- Topic dropdown -->
+    <div class="quiz-box" style="margin-top:1.5rem;">
+      <p><strong>Explore a CS Topic:</strong></p>
+
+      <!-- User interaction 2: dropdown -->
+      <label for="topic-select">Choose a topic:</label>
+      <select id="topic-select" onchange="showTopic()">
+        <option value="">-- Pick a topic --</option>
+        <option value="algorithms">Algorithms</option>
+        <option value="databases">Databases</option>
+        <option value="networking">Networking</option>
+        <option value="ai">Artificial Intelligence</option>
+      </select>
+      <p id="topic-output" style="margin-top:1rem;"></p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 <strong>Arezo Ahmadi</strong> &mdash; Built with <em>HTML, CSS & JavaScript</em></p>
+    <div class="footer-links">
+      <a href="final.html">Home</a>
+      <a href="finalabout.html">About</a>
+      <a href="finalskills.html">Skills</a>
+      <a href="finalproject.html">Projects</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
